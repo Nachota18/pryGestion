@@ -28,35 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnInicioSesion = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // btnInicioSesion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Te piden hacer una app para registrar las actividades  (ejemplo: procesos de desa" +
-    "rrollo)";
+            this.btnInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicioSesion.Location = new System.Drawing.Point(74, 223);
+            this.btnInicioSesion.Name = "btnInicioSesion";
+            this.btnInicioSesion.Size = new System.Drawing.Size(208, 59);
+            this.btnInicioSesion.TabIndex = 0;
+            this.btnInicioSesion.Text = "Inicio Sesion";
+            this.btnInicioSesion.UseVisualStyleBackColor = true;
+            this.btnInicioSesion.Click += new System.EventHandler(this.btnInicioSesion_Click);
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Location = new System.Drawing.Point(74, 330);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(208, 59);
+            this.btnRegistrar.TabIndex = 0;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 437);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(375, 437);
+            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.btnInicioSesion);
             this.Name = "frmMain";
-            this.Text = "Registro de actividades - Desarrollo de Software";
+            this.Text = "Login y Registro";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnInicioSesion;
+        private System.Windows.Forms.Button btnRegistrar;
     }
 }
 

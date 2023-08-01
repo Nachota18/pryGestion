@@ -93,6 +93,13 @@
             // cboTipoActividad
             // 
             this.cboTipoActividad.FormattingEnabled = true;
+            this.cboTipoActividad.Items.AddRange(new object[] {
+            "Relevamiento",
+            "Propuesta",
+            "Diagnostico",
+            "Analisis",
+            "Diagrama de base de datos",
+            "Programacion"});
             this.cboTipoActividad.Location = new System.Drawing.Point(12, 95);
             this.cboTipoActividad.Name = "cboTipoActividad";
             this.cboTipoActividad.Size = new System.Drawing.Size(244, 21);

@@ -16,5 +16,24 @@ namespace pryGestion
         {
             InitializeComponent();
         }
+
+        private void frmMostrar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIngresarActividad_Click(object sender, EventArgs e)
+        {
+            Form MostrarActividad = new frmRegistrar();
+            MostrarActividad.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form volver = new frmMain();
+            volver.Show();
+            this.Hide();
+        }
     }
 }

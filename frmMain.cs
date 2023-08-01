@@ -16,5 +16,24 @@ namespace pryGestion
         {
             InitializeComponent();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnInicioSesion_Click(object sender, EventArgs e)
+        {
+            Form login = new frmLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Por el momento no esta disponible esta opcion");
+            this.Close();
+
+        }
     }
 }
