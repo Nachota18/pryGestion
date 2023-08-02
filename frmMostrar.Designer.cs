@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMostrar));
             this.btnIngresarActividad = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -35,7 +36,7 @@
             // btnIngresarActividad
             // 
             this.btnIngresarActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarActividad.Location = new System.Drawing.Point(43, 163);
+            this.btnIngresarActividad.Location = new System.Drawing.Point(43, 58);
             this.btnIngresarActividad.Name = "btnIngresarActividad";
             this.btnIngresarActividad.Size = new System.Drawing.Size(221, 49);
             this.btnIngresarActividad.TabIndex = 3;
@@ -46,7 +47,7 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(43, 283);
+            this.btnVolver.Location = new System.Drawing.Point(43, 240);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(221, 45);
             this.btnVolver.TabIndex = 3;
@@ -61,6 +62,7 @@
             this.ClientSize = new System.Drawing.Size(310, 370);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnIngresarActividad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMostrar";
             this.Text = "Actividad";
             this.Load += new System.EventHandler(this.frmMostrar_Load);

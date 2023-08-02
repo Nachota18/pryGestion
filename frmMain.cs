@@ -32,7 +32,7 @@ namespace pryGestion
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Por el momento no esta disponible esta opcion");
-            this.Close();
+            
 
         }
     }

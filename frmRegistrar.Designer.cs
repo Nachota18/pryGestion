@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrar));
             this.lblFecha = new System.Windows.Forms.Label();
             this.txtDetalleActividad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,9 +52,11 @@
             this.DetalleActividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Reunion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tareas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
@@ -281,11 +284,22 @@
             this.Tareas.Name = "Tareas";
             this.Tareas.ReadOnly = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(461, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 512);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtgvRegistro);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.btnCerrar);
@@ -298,6 +312,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDetalleActividad);
             this.Controls.Add(this.lblFecha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistrar";
             this.Text = "Registro de Actividad";
             this.Load += new System.EventHandler(this.frmRegistrar_Load);
@@ -306,6 +321,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRegistro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +352,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DetalleActividad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reunion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tareas;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
